@@ -6,21 +6,13 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="403dp"
-        android:layout_marginTop="172dp"
+        android:layout_width="381dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="112dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/instructionsTextViewOne"
-            android:layout_width="378dp"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Instruções:"
-            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/instructionsTextViewTwo"
@@ -32,7 +24,7 @@
         <TextView
             android:id="@+id/instructionsTextViewThree"
             android:layout_width="378dp"
-            android:layout_height="135dp"
+            android:layout_height="101dp"
             android:padding="16dp"
             android:text="Todos os campos devem ser preenchidos sem ponto(). ou virgula (,)." />
 
@@ -44,5 +36,16 @@
             android:layout_marginTop="16dp"
             android:text="Fechar" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Instruções:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="61dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
