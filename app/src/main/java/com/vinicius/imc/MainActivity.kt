@@ -1,9 +1,12 @@
 package com.vinicius.imc
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Button
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -48,8 +51,16 @@ class MainActivity : AppCompatActivity() {
 
             if (calculo < 18.5) {
                 resultado.setText("Seu resultado foi: ${calculo}" + "\n" + "Você esta abaixo do peso!")
-        } else {
-                resultado.setText("${calculo}" )
+                resultado.setTextColor(Color.RED)
+        } else if (calculo > 18.5 && calculo < 24.9){
+                resultado.setText("Seu resultado foi: ${calculo}" + "\n" + "Você esta com peso normal!")
+                resultado.setTextColor(Color.parseColor("#07F1D4"))
+            } else if(calculo >= 25) {
+                resultado.setText("Seu resultado foi: ${calculo}" + "\n" + "Você esta acima do peso!")
+                resultado.setTextColor(Color.RED)
+            }else {
+                resultado.setText("Ocorreu um erro inesperado, favor reiniciar o calculo.")
+                resultado.setTextColor(Color.RED)
             }
         }
 
