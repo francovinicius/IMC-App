@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /* Instrções */
         val btnIntro = findViewById<Button>(R.id.instrucao)
         btnIntro.setOnClickListener{
             // Inflar o layout do modal
@@ -31,5 +32,9 @@ class MainActivity : AppCompatActivity() {
             // Mostrar o modal
             alertDialog.show()
         }
+
+        /* Calcular Imc */
+
     }
+
 }

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FAF0E6">
 
     <LinearLayout
         android:layout_width="381dp"
@@ -19,6 +20,7 @@
             android:layout_width="378dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            android:textColor="#5C5470"
             android:text="Informe sua Altura e Peso nos campos abaixo." />
 
         <TextView
@@ -26,6 +28,7 @@
             android:layout_width="378dp"
             android:layout_height="101dp"
             android:padding="16dp"
+            android:textColor="#5C5470"
             android:text="Todos os campos devem ser preenchidos sem ponto(). ou virgula (,)." />
 
         <Button
@@ -44,6 +47,7 @@
         android:padding="16dp"
         android:text="Instruções:"
         android:textStyle="bold"
+        android:textColor="#5C5470"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="61dp" />
