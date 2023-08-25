@@ -1,4 +1,4 @@
-# IMC App
+![App](https://github.com/francovinicius/IMC-App/blob/main/IMCApp.svg)
 
 O IMC App é um aplicativo simples desenvolvido em Kotlin que permite calcular o Índice de Massa Corporal (IMC) com base na altura e peso fornecidos pelo usuário. O aplicativo fornece informações sobre o status do peso do usuário de acordo com os valores calculados.
 
