@@ -62,6 +62,13 @@ class MainActivity : AppCompatActivity() {
                 resultado.setText("Ocorreu um erro inesperado, favor reiniciar o calculo.")
                 resultado.setTextColor(Color.RED)
             }
+
+            //limpar campos após 5 segundos
+            Handler().postDelayed({
+                findViewById<EditText>(R.id.altura).text.clear()
+                findViewById<EditText>(R.id.peso).text.clear()
+                resultado.text = ""
+            }, 5000)
         }
 
     }
